@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="title">
+    <h1>Wellcome in paper, scissors and rock game :-)</h1>
+  </div>
+  <div>
+    <button class="btn new-game" id="new-game-button">
+      New Game
+    </button>
+  </div>
+  <section class="buttons">
+    <div class="game">
+      <button  class="btn paper player-move" id="paper-button" data-move="paper">
+        Paper
+      </button>
+    </div>
+    <div class="game">
+      <button  class="btn rock player-move" id="rock-button" data-move="rock">
+        Rock
+      </button>
+    </div>
+    <div class="game">
+      <button class="btn shears player-move" id="shears-button" data-move="shears">
+        Scissors
+      </button>
+    </div>
+  </section>
+  <section class="output">
+    <h3 id="roundsToWinInfo"></h3>
+    <h3 id="output"></h3>
+  </section>
+  <section class="round">
+    <h3  id="result"></h3>
+  </section>
+
+  <div class="overlay" id="modal-overlay">
+    <div id="score" class="modal">
+    		<a href="#" class="close">x</a>
+    		<div class="content">
+    			<h3></h3>
+          <table id="gameResults">
+            <caption>Table of results</caption>
+            <thead>
+              <tr>
+                <th>Round's number</th>
+                <th>Player move</th>
+                <th>Computer move</th>
+                <th>Round winner</th>
+                <th>Players score <br> [player - computer]</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    		</div>
+    </div>
+    <div id="game-over" class="modal">
+      <a href="#" class="close">x</a>
+      <div class="content">
+        <h3>Game over, please press the new game button!</h3>
+      </div>
+    </div>
+    <div id="rounds" class="modal">
+      <a href="#" class="close">x</a>
+      <div class="content">
+        <h3>Please enter the number of rounds to win and click ok button!!</h3>
+        <input id="form" type="number"></input>
+        <button id="ok">Ok</button>
+      </div>
+    </div>
+</div>
+  <script src="js/script.js"></script>
+</body>
+</html>

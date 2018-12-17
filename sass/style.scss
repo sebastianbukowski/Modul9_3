@@ -1,0 +1,138 @@
+.buttons {
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.game {
+		flex: 1;
+		padding: 30px;
+	}
+}
+.btn {
+	display: inline-block;
+	padding: 11px 50px;
+	max-width: 100%;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	color: #fff;
+	border: 2px solid;
+	border-radius: 4px;
+	transition: color .3s, background-color .3s;
+	cursor: pointer;
+	outline: 0!important;
+	text-decoration: none;
+	touch-action: manipulation;
+	user-select: none;
+	&:hover, &:active {
+		color: black;
+		background-color: #fff;
+	}
+}
+.paper  {
+  background-color: red;
+}
+.rock  {
+  background-color: brown;
+}
+.shears  {
+  background-color: green;
+}
+.new-game  {
+	display: block;
+	margin: 0 auto;
+  background-color: blue;
+}
+.title {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+/* modal styles */
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+
+	&.show {
+		display: block;
+	}
+}
+.game-over {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+
+	&.show {
+		display: block;
+	}
+}
+.rounds {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+
+	&.show {
+		display: block;
+	}
+}
+
+.modal {
+	display: none;
+	background: #fff;
+	width: 600px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+
+	&.show {
+		display: block;
+	}
+
+	table {
+		caption {
+			margin-bottom: 10px;
+		}
+		th:last-child {
+			word-break: normal;
+		}
+	}
+
+
+
+	.close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 5px;
+		color: #000;
+		text-decoration: none;
+	}
+	.content {
+		min-height: 30px;
+		padding: 5px 30px;
+	}
+}
